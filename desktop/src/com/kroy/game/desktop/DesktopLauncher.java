@@ -62,7 +62,7 @@ public class DesktopLauncher {
         listOfDir = findAllDir(Constants.getResourceRoot());
         for (String dir: listOfDir)
         {
-            if (dir.endsWith("\\assets"))
+            if (dir.endsWith("\\assets") && dir.contains("kroy"))
             {
                 return (dir.replace("\\","/") + "/");
             }

@@ -20,15 +20,15 @@ public final class Constants {
     //private static int RESOLUTION_WIDTH = 640;
     //private static int RESOLUTION_HEIGHT = 360;
 
-    //private static boolean FULLSCREEN = true;
-    private static boolean FULLSCREEN = false;
+    private static boolean FULLSCREEN = true;
+    //private static boolean FULLSCREEN = false;
 
 
     private static int TILE_SIZE = 64;
     private static AssetManager MANAGER = new AssetManager();
 
-    private static int FORTRESS_COUNT = 4;
-    private static int FIREENGINE_COUNT = 2;
+    private static int FORTRESS_COUNT = 6;
+    private static int FIREENGINE_COUNT = 4;
 
     private static int STATION_REFILL_AMOUNT = 2;
     private static int STATION_REPAIR_AMOUNT = 2;
@@ -37,18 +37,19 @@ public final class Constants {
     private static String[] BUILDING_TEXTURE = {"BuildingTexture/BuildingTile1.png", "BuildingTexture/BuildingTile2.png", "BuildingTexture/BuildingTile3.png", "BuildingTexture/BuildingTile4.png", "BuildingTexture/BuildingTile5.png", "BuildingTexture/BuildingTile6.png", "BuildingTexture/BuildingTile7.png", "BuildingTexture/BuildingTile8.png", "BuildingTexture/BuildingTile9.png",};
 
     private static String RESOURCE_ROOT = System.getProperty("user.dir");
-    private static String MAP_FILE_NAME = "Data/yorkMap.csv";
+    private static String MAP_FILE_NAME = "Data/yorkMapFlipped.csv";
 
     private static int STATION_RANGE = 3;
 
-    private static String[] fortressNames = {"The Minster", "National Railway Museum", "Yorvik Centre", "The Shambles"};
+    private static String[] fortressNames = {"The Minster", "National Railway Museum", "Yorvik Centre", "The Shambles", "Castle Howard", "Clifford's Tower"};
 
     private static  int[][] fireEngineProfiles = {
-            {8,5,5,3,4}, {9,4,4,7,2}
+            {8,5,5,3,4}, {9,4,4,7,2},{7,6,6,5,3},{6,7,8,6,5}
     };
 
+
     private static  int[][] fortressProfiles = {
-            {4,5,7}, {7,3,5},{9,4,4}, {6,6,3}
+            {4,5,7}, {7,3,5},{9,4,4}, {6,6,3},{5,7,8},{9,6,6}
     };
 
 
